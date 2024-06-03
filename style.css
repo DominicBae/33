@@ -1,0 +1,89 @@
+.nav-deco {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.search-size {
+    height: 100px;
+}
+
+.menu {
+    display: inline-block;
+    position: relative;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-decoration: none;
+    margin-right: 3px;
+}
+
+.menu::after {
+    content: '';
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: rgb(231, 32, 27);
+    transition: width 0.3s ease;
+}
+
+.menu:hover::after {
+    width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .menu:hover::after {
+        width: 14%;
+    }
+}
+
+.input-box {
+    width: 260px;
+    height: 46px;
+    border-radius: 10px;
+    border: 1px solid #dfe1e5;
+    padding-left: 15px;
+    padding-right: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .input-box {
+        width: 92%;
+    }
+}
+
+input:focus {
+    outline: 2px solid rgb(231, 32, 27);
+}
+
+.search-icon {
+    position: relative;
+    right: 43px;
+    color: #9aa0a6;
+    font-size: 21px;
+}
+
+.mobile {
+    display: none;
+}
+
+h2 {
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.genre {
+    margin-right: 10px;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+
+.genre:hover {
+    color: rgb(231, 32, 27);
+}
+
+.mobile_menu {
+    justify-content: center;
+    text-align: center;
+}
